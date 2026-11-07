@@ -1,0 +1,11 @@
+polkit.addRule(function(action, subject) {
+    if (action.id.indexOf("org.freedesktop.policykit.exec") === 0 &&
+        subject.user === "live") {
+        return polkit.Result.YES;
+    }
+    if ((action.id == "com.github.calamares.calamares.pkexec.run" ||
+         action.id == "com.github.calamares.calamares.pkexec") &&
+        subject.user === "live") {
+        return polkit.Result.YES;
+    }
+});

@@ -1,0 +1,40 @@
+---
+componentName: jkos
+
+windowExpanding: normal
+windowSize: 1000px,680px
+windowPlacement: center
+
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+
+sidebar: widget
+navigation: widget
+
+strings:
+    productName: jkOS
+    shortProductName: jkOS
+    version: rolling
+    shortVersion: rolling
+    versionedName: jkOS rolling
+    shortVersionedName: jkOS
+    bootloaderEntryName: jkOS
+    productUrl: https://archlinux.org/
+    supportUrl: https://wiki.archlinux.org/
+    knownIssuesUrl: https://gitlab.archlinux.org/archlinux/archiso/-/issues
+    releaseNotesUrl: https://archlinux.org/news/
+    donateUrl: https://archlinux.org/donate/
+
+images:
+    productLogo: logo.png
+    productIcon: logo.png
+    productWelcome: logo.png
+
+slideshow: show.qml
+slideshowAPI: 2
+
+style:
+    sidebarBackground: "#0f172a"
+    sidebarText: "#e2e8f0"
+    sidebarTextSelect: "#ffffff"
+    sidebarTextHighlight: "#6366f1"

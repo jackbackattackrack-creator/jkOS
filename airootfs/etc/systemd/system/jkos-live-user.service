@@ -1,0 +1,12 @@
+[Unit]
+Description=Create the jkOS live user
+After=systemd-sysusers.service systemd-tmpfiles-setup.service
+Before=display-manager.service sddm.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/jkos-setup-live-user
+
+[Install]
+WantedBy=multi-user.target

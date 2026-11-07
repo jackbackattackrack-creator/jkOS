@@ -1,0 +1,4 @@
+Defaults env_reset
+Defaults pwfeedback
+%wheel ALL=(ALL:ALL) ALL
+live ALL=(ALL:ALL) NOPASSWD: ALL
